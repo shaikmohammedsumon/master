@@ -21,28 +21,29 @@
 
     <!-- Header Section -->
     <section class="header_section">
-        <div class="header_section_div">
-            <div class="row">
+        <!-- এটি শুধুমাত্র মিডিয়াম স্ক্রিন (md) এবং তার বড় স্ক্রিনে দেখাবে। -->
+        <div class=" header_section_div d-none d-md-block">
+            <div class="row align-items-center">
                 <div class="col-2">
-                    <img src="../style/main/image/logo.png" alt="Logo" height="50px">
+                    <h1>Web.Master</h1>
                 </div>
                 <div class="col-6">
-                    <ul>
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>Blogs</li>
-                        </a>
-                        <a href="#">
-                            <li>About</li>
-                        </a>
-                        <a href="#">
-                            <li>Contact</li>
-                        </a>
-                        <a href="../movie/index.html">
-                            <li>Movie</li>
-                        </a>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../movie/index.html" class="nav-link">Movie</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-3 d-flex">
@@ -51,44 +52,91 @@
                         <button class="btn btn-success">Search</button>
                     </div>
                 </div>
-                <div class="col-1 login_btn">
-                    <a href="#" class="">Login</a>
+                <div class="col-1 text-center">
+                    <a href="#" class="btn btn-link">Login</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- এটি শুধুমাত্র ছোট স্ক্রিনে (xs, sm) দেখাবে। -->
+        <div class="d-block d-md-none">
+            <div class="row align-items-center">
+                <div class="col-5">
+                    <h1>Web.Master</h1>
+                </div>
+               
+                <div class="col-7 d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-success">Search</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row align-items-center">
+               
+                <div class="col-10">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../movie/index.html" class="nav-link">Movie</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-2 text-center">
+                    <a href="#" class="btn btn-link">Login</a>
                 </div>
             </div>
         </div>
     </section>
+    
+
+
+
 
     <!-- Slides Section -->
-<section class="slide_section">
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
-        <div class="carousel-inner">
-            <div class="carousel-item active"> <!-- প্রথম স্লাইডে active ক্লাস থাকবে -->
-                <div class="text-overlay d-none d-md-block">
-                    <h5>Your Text Here</h5>
-                    <p>Additional information about this slide.</p>
+    <section class="slide_section">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> <!-- প্রথম স্লাইডে active ক্লাস থাকবে -->
+                    <div class="text-overlay d-none d-md-block">
+                        <h5>Your Text Here</h5>
+                        <p>Additional information about this slide.</p>
+                    </div>
+                    <img src="../style/main/image/image1.jpg" class="d-block w-100" alt="..." width="500" height="500">
                 </div>
-                <img src="../style/main/image/image1.jpg" class="d-block w-100" alt="..." width="500" height="500">
-            </div>
-            <div class="carousel-item"> <!-- দ্বিতীয় স্লাইডে active ক্লাস থাকবে না -->
-                <div class="text-overlay d-none d-md-block">
-                    <h5>Your Text Here</h5>
-                    <p>Additional information about this slide.</p>
+                <div class="carousel-item"> <!-- দ্বিতীয় স্লাইডে active ক্লাস থাকবে না -->
+                    <div class="text-overlay d-none d-md-block">
+                        <h5>Your Text Here</h5>
+                        <p>Additional information about this slide.</p>
+                    </div>
+                    <img src="../style/main/image/image2.jpg" class="d-block w-100" alt="..." width="500" height="500">
                 </div>
-                <img src="../style/main/image/image2.jpg" class="d-block w-100" alt="..." width="500" height="500">
             </div>
-        </div>
 
-        <!-- Carousel Control Buttons (আগের অবস্থানে রাখা হয়েছে) -->
-        <div class="button text-center">
-            <button class="btn btn-primary" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                Prev
-            </button>
-            <button class="btn btn-primary" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                Next
-            </button>
+            <!-- Carousel Control Buttons (আগের অবস্থানে রাখা হয়েছে) -->
+            <div class="button text-center">
+                <button class="btn btn-primary" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    Prev
+                </button>
+                <button class="btn btn-primary" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    Next
+                </button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
