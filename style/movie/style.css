@@ -202,9 +202,34 @@
     text-decoration: none;
 }
 
+.container_click_button_mini{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.click_button_mini{
+    width: 100%;
+    text-align: center;
+    min-width: 50px;
+    background-color: #E74C3C;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: list-item;
+}
+.click_button_mini:hover{
+    background-color: #5f09a5;
+    color: white;
+}
+
 .click_button:hover {
     background-color: #5f09a5;
     color: white;
+    
 }
 
 .section_singel_right {
