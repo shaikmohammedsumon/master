@@ -255,6 +255,10 @@
     justify-content: center;
     align-items: center;
 }
+.container_click_button_mini a{
+    text-decoration: none;
+    list-style: none;
+}
 .click_button_mini{
     width: 100%;
     text-align: center;
