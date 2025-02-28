@@ -1,9 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-
+    user-select: none;
+    overflow: -moz-scrollbars-none;  /* For Firefox */
+    scrollbar-width: none; /* For Firefox */
 }
-
+body::-webkit-scrollbar {
+    display: none;  /* For Chrome, Safari, and Edge */
+  }
 .header_section {
     width: 100%;
     min-height: 150px;
@@ -284,8 +288,10 @@
 }
 
 .section_singel_right {
-    width: 100%;
+    width: 98%;
     height: 100%;
+    padding-right: 10px ;
+    
     /* border-left: 1px solid black; */
 }
 
@@ -316,7 +322,7 @@
 }
 .Categories_div  a {
     height: 50px;
-    width: 46%;
+    width: 45%;
     background-color: #2C3E50;
     color: white;
     margin:5px;
