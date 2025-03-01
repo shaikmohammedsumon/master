@@ -6,7 +6,7 @@
     /* For Firefox */
     scrollbar-width: none;
     /* For Firefox */
-    
+
 }
 
 body::-webkit-scrollbar {
@@ -130,7 +130,7 @@ i:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(71, 0, 0, 0.4); */
     z-index: 1;
     color: aliceblue;
 }
@@ -183,8 +183,63 @@ i:hover {
 
 
 
+.body_section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(25, 5, 44);
 
+}
+.body_section .title {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 0 5%;
+    border-bottom: 1px solid rgb(138, 27, 27);
+}
 
+.body_section .title h3{
+    color: white;
+}
+
+.body_section .row {
+    padding:  0 4%; 
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+}
+.body_section .row .image_div{
+    height: 500px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    margin: 20px;
+    border-radius: 35px 35px 0 0;
+
+}
+
+.body_section .row .image_div h3{
+    color: red;
+    margin: 10px;
+}
+
+.body_section .row .image_div p{
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    text-align: justify;
+}
+
+.body_section .row .image_div h4{
+    color: rgb(0, 165, 33);
+    margin: 10px;
+    text-align: justify;
+}
+
+.body_section .row img {
+    border-radius: 35px 35px 0 0;
+    width: 100%;
+    height: 300px;
+}
 
 
 
