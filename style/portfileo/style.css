@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Edge */
+}
+
+.header_section {
+    background-color: rgb(21, 33, 54);
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid rgb(109, 109, 109);
+}
+
+.header_section .header {
+    width: 100%;
+    height: 140px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.header_section .header .header_div {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header_section .header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 80%;
+}
+
+.header_section .header .head .menu div ul {
+    display: flex;
+    list-style: none;
+}
+
+.header_section .header .head .menu div ul li a {
+    margin: 5px 20px;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.header_section .header .head .menu div ul li a:hover {
+    /* background-color: green; */
+    border-bottom: 2px solid rgb(135, 203, 0);
+    color: rgba(97, 255, 40, 0.984);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        /* Hide Menu by default on mobile */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 95%;
+        background: rgb(54, 0, 126);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        margin: 20px;
+        /* margin-left: 50px; */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        /* text-align: center; */
+        padding: 10px 5px;
+        list-style: none;
+    }
+
+
+    .menu ul li a {
+        padding: 5px 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    .menu ul li:hover{
+        color: green;
+    }
+
+
+    .menu_icon {
+        display: block;
+        /* Show hamburger icon */
+    }
+
+    .menu.show {
+        display: block;
+        /* Show menu when toggle */
+    }
+}
+
+
+
+
+
+.home_section{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(21, 33, 54);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* note */
+
+.container {
+    margin-right: auto !important;
+    padding-right: 0 !important;
+}
+
+.row {
+    margin-right: 0 !important;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding-right: 0 !important;
+}
+
+.section_singel_right {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
