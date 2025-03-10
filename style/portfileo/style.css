@@ -8,14 +8,16 @@
 
 body::-webkit-scrollbar {
     display: none;
-    /* For Chrome, Safari, and Edge */
+
 }
+
 
 .header_section {
     background-color: rgb(21, 33, 54);
     width: 100%;
     height: 140px;
-    border-bottom: 1px solid rgb(109, 109, 109);
+
+
 }
 
 .header_section .header {
@@ -25,6 +27,15 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     color: white;
+    backdrop-filter: blur(10px);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid rgb(156, 156, 156);
+    /* অন্য সবকিছুর উপরে রাখতে */
 }
 
 .header_section .header .header_div {
@@ -57,6 +68,12 @@ body::-webkit-scrollbar {
     /* background-color: green; */
     border-bottom: 2px solid rgb(135, 203, 0);
     color: rgba(97, 255, 40, 0.984);
+}
+
+ .atag.active {
+    /* background-color: green; */
+    border-bottom: 2px solid rgb(135, 203, 0);
+    /* color: rgba(97, 255, 40, 0.984); */
 }
 
 /* Responsive Styles */
@@ -92,7 +109,8 @@ body::-webkit-scrollbar {
         color: white;
         font-size: 20px;
     }
-    .menu ul li:hover{
+
+    .menu ul li:hover {
         color: green;
     }
 
@@ -112,10 +130,93 @@ body::-webkit-scrollbar {
 
 
 
-.home_section{
+.home_section {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: rgb(21, 33, 54);
+    color: white;
+}
+
+.home_section .home {
+    width: 90%;
+}
+
+.home_section .home .title {
+    display: flex;
+
+    justify-content: center;
+    align-items: start;
+    height: 700px;
+    flex-direction: column;
+}
+
+.home_section .home .title h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+
+}
+
+
+.home_section .home .title h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+
+}
+
+.home_section .home .title .icon {
+    display: flex;
+}
+
+.home_section .home .title .icon div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 184, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.home_section .home .title .icon a {
+    font-size: 20px;
+    color: rgb(0, 184, 58);
+    text-decoration: none;
+    /* transform: 2s al; */
+
+}
+
+.home_section .home .title .icon a:hover {
+    /* font-size: 30px; */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(0, 184, 58);
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 184, 58);
+}
+
+
+.home_section .home .title button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: aqua;
+    font-size: 20px;
+    outline: none;
+}
+
+.home_section .home .title button:hover {
+    background-color: green;
+    color: white;
+    outline: none;
+
 }
 
 
