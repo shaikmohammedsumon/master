@@ -219,12 +219,142 @@ body::-webkit-scrollbar {
 
 }
 
+.home_section .home .logo{
+    background-image: url("./image/dot_circle.png");
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.home_section .home .logo img{ 
+    width: 100%;
+    height: 600PX;
+   
+}
+
+
+.about_section{
+    width: 100%;
+    min-height: 800px;
+    background-color: rgb(11, 25, 50);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
 
 
 
+.about_section .about_section_logo img{
+    height: 600px;
+}
+
+
+.education {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    gap: 20px;
+}
+
+.education .year {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    /* background: #6c63ff; */
+    /* padding: 8px 15px;
+    border-radius: 30px; */
+    min-width: 70px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.education .line {
+    width: 3px;
+    height: 50px;
+    background-color: #6c63ff;
+    position: relative;
+}
+
+.education .location {
+    flex: 1;
+}
+
+.education .location span {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Progress bar wrapper */
+.education .progressWrapper {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 12px;
+}
+
+/* Progress bar main */
+.education .progress {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+/* Progress bar fill */
+.education .progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #6c63ff, #9c27b0);
+    width: 0;
+    transition: width 2s ease;
+}
+
+/* Optional animation if using WOW.js */
+.wow {
+    visibility: visible;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
 
 
 
+.service{
+    width: 100%;
+    min-height: 700px;
+    background-color: rgb(2, 22, 58);
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.service .service_div{
+    width: 90%;
+}
+
+.service h2{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.service i{
+    font-size: 60px; 
+    margin-right: 20px; 
+    color: aqua;
+}
+
+.service p{
+    text-align: justify;
+}
 
 
 
